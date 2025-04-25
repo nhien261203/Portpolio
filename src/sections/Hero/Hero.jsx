@@ -18,13 +18,13 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
 
-    const {theme, toggleTheme} = useTheme();
+    const { theme, toggleTheme } = useTheme();
 
     const themeIcon = theme === 'light' ? sun : moon;
     const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
-    
+
     return <section id="hero" className="container">
         <div className="colorModeContainer">
             <img className="hero" src={heroImg} alt="Profile picture of Nhien" />
@@ -53,15 +53,16 @@ function Hero() {
                 <a href="https://Linkedin.com/" target="_blank">
                     <img src={linkedinIcon} alt="Linkedin icon" />
                 </a>
-                <p>
-                    With a passion for developing modern React web apps for commercial businesses.
-                </p>
-                <a href={CV} download>
-                    <button className="hover" download>
-                        Resume
-                    </button>
-                </a>
+
             </span>
+            <p className="description">
+                With a passion for developing modern React web apps for commercial businesses.
+            </p>
+            <a href={CV} download>
+                <button className="hover" download>
+                    Resume
+                </button>
+            </a>
         </div>
     </section>
 }
