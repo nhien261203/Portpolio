@@ -6,10 +6,7 @@
     height: 100vh;            /* full chiều cao màn hình */
     gap: 200px;
     text-align: center;
-    text-align: center;
 
-    
-    
     span {
         display: flex;
         gap: 25px;
@@ -17,10 +14,14 @@
 
         a {
             margin: 0;
+            transition: transform 0.4s ease-in-out;
 
             img {
                 width: 30px;
             }
+        }
+        a:hover{
+            transform: scale(1.1);
         }
     }
 
@@ -62,10 +63,13 @@
     position: absolute;
     right:0;
     width: 25px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .colorMode:hover{
     cursor: pointer;
+    transform: scale(1.1);
+    
 }
 
 .description{

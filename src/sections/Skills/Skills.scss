@@ -22,3 +22,56 @@
 //     row-gap: 40px;
 //     max-width: 26ch;
 // }
+
+.skillList {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+
+    // row-gap: 40px;
+    
+
+
+
+
+    img {
+        width: 20px;
+    }
+
+    div {
+        padding: 10px 20px 10px 20px;
+    }
+
+    div span p {
+        display: inline;
+
+
+    }
+
+}
+hr {
+    width: 30%;
+    margin: 20px auto;
+    /* tự động căn giữa ngang */
+    border: none;
+    /* bỏ viền mặc định nếu cần */
+    border-top: 2px solid #ccc;
+    /* thêm viền mới nếu thích */
+}
+
+@media(max-width:767px) {
+    .skillList {
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        max-width: 38ch;
+    }
+    hr{
+        width: 40%;
+        border-top: 2px solid #000;
+    }
+}

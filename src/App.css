@@ -61,8 +61,10 @@ p{
 
 .sectionTitle{
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .hover {
     cursor: pointer;
+    
 }
