@@ -1,41 +1,40 @@
-.container {
+
+.content-hero {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* căn giữa ngang */
+    align-items: center;     /* căn giữa dọc */
+    height: 100vh;            /* full chiều cao màn hình */
+    gap: 200px;
     text-align: center;
-    height: 100dvh;
-    min-height: 500px;
+    text-align: center;
 
-    .hero {
-        max-width: 200px;
-    }
-
-    span{
+    
+    
+    span {
         display: flex;
         gap: 25px;
         justify-content: center;
-        
-        a{
+
+        a {
             margin: 0;
 
-            img{
+            img {
                 width: 30px;
             }
         }
     }
 
-    a{
+    a {
         width: fit-content;
         align-self: center;
     }
 
-    button{
-        background-color:var(--btn-color) ;
-        color:var(--btn-text-color);
+    button {
+        background-color: var(--btn-color);
+        color: var(--btn-text-color);
         border: none;
         border-radius: 20px;
-        width:126px;
+        width: 126px;
         height: 50px;
         font-size: 20px;
         font-weight: bold;
@@ -43,12 +42,12 @@
         transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 
     }
-    
-    button:hover{
+
+    button:hover {
         transform: scale(1.05);
     }
 
-    button:active{
+    button:active {
         transform: translateY(2px);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     }
@@ -71,7 +70,7 @@
 
 .description{
     max-width: 24ch;
-    
+
 }
 
 .info {
@@ -80,11 +79,17 @@
     gap: 20px;
 }
 
-@media (max-width:767px) {
-    .container{
+@media(max-width:767px){
+    .content-hero{
         display: flex;
         flex-direction: column;
-        
+        gap: 20px;
+
+    }
+    .colorModeContainer{
+        order: 1;
+    }
+    .info{
+        order: 2;
     }
 }
-

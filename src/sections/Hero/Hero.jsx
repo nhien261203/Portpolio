@@ -25,45 +25,50 @@ function Hero() {
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
-    return <section id="hero" className="container">
-        <div className="colorModeContainer">
-            <img className="hero" src={heroImg} alt="Profile picture of Nhien" />
+    return <section id="hero" className="container" >
+        <div className="content-hero">
+            
+            <div className="info">
+                <h1>
+                    Do Van
+                    <br />
+                    Nhien
+                </h1>
+                <h2>Frontend Developer</h2>
+                <span>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src={twitterIcon} alt="Twitter icon" />
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <img src={githubIcon} alt="Github icon" />
+                    </a>
+                    <a href="https://Linkedin.com/" target="_blank">
+                        <img src={linkedinIcon} alt="Linkedin icon" />
+                    </a>
 
-            <img
-                className="colorMode"
-                src={themeIcon}
-                alt="Color mode icon"
-                onClick={toggleTheme}
-            />
-        </div>
-        <div className="info">
-            <h1>
-                Do Van
-                <br />
-                Nhien
-            </h1>
-            <h2>Frontend Developer</h2>
-            <span>
-                <a href="https://twitter.com/" target="_blank">
-                    <img src={twitterIcon} alt="Twitter icon" />
+                </span>
+                <p className="description">
+                    With a passion for developing modern React web apps for commercial businesses.
+                </p>
+                <a href={CV} download>
+                    <button className="hover" download>
+                        Resume
+                    </button>
                 </a>
-                <a href="https://github.com/" target="_blank">
-                    <img src={githubIcon} alt="Github icon" />
-                </a>
-                <a href="https://Linkedin.com/" target="_blank">
-                    <img src={linkedinIcon} alt="Linkedin icon" />
-                </a>
+            </div>
+            <div className="colorModeContainer">
+                <img className="hero" src={heroImg} alt="Profile picture of Nhien" />
 
-            </span>
-            <p className="description">
-                With a passion for developing modern React web apps for commercial businesses.
-            </p>
-            <a href={CV} download>
-                <button className="hover" download>
-                    Resume
-                </button>
-            </a>
+                <img
+                    className="colorMode"
+                    src={themeIcon}
+                    alt="Color mode icon"
+                    onClick={toggleTheme}
+                />
+            </div>
         </div>
+
+
     </section>
 }
 
