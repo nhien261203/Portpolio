@@ -41,7 +41,6 @@ function Contact() {
                 </div>
                 <input className="hover btn" type="submit" value="Submit" />
             </form>
-            <h1>Xin chao</h1>
         </section>
     )
 }
